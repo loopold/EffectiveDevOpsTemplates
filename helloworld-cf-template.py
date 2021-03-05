@@ -1,7 +1,7 @@
 """Generating CloudFormation template."""
-from ipaddress import ip_network
+# from ipaddress import ip_network
 
-from ipify import get_ip
+# from ipify import get_ip
 
 from troposphere import (
     Base64,
@@ -15,7 +15,8 @@ from troposphere import (
 )
 
 ApplicationPort = "3000"
-PublicCidrIp = str(ip_network(get_ip()))
+# PublicCidrIp = str(ip_network(get_ip()))
+PublicCidrIp = "93.179.211.98/32"
 
 t = Template()
 
